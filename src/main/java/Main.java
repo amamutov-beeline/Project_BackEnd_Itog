@@ -1,24 +1,24 @@
+import Comparators.Student.StudentComparator;
+import Comparators.University.UniversityComparator;
+import Reader.EnumReader;
+import Reader.FileReader;
 import StudUni.Student;
 import StudUni.University;
-import enums.StudyProfile;
+import enums.StudComparatorsEnum;
+import enums.UnivComparatorsEnum;
+
+import java.io.IOException;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        Student student = new Student();
-        student.setFullName("Asd Fgh Jkl");
-        student.setUniversityId("1");
-        student.setCurrentCourseNumber(5);
-        student.setAvgExamScore(2.2F);
+    public static void main(String[] args) throws IOException {
+        List<University> universities = FileReader.UniversityInfo("src/main/resources/universityInfo.xlsx");
+        UniversityComparator universityComparator = EnumReader.getUniversityComparator(UnivComparatorsEnum.YEAR_OF_FOUNDATION);
+        universities.stream().sorted(universityComparator).forEach(System.out::println);
 
-        System.out.println(student);
-
-        University university = new University();
-        university.setId("1");
-        university.setFullName("Harvard University");
-        university.setShortName("HU");
-        university.setYearOfFoundation(1636);
-        university.setMainProfile(StudyProfile.MEDICINE);
-
-        System.out.println(university);
+        List<Student> students = FileReader.StudentInfo("src/main/resources/universityInfo.xlsx");
+        StudentComparator studentComparator = EnumReader.getStudentComparator(StudComparatorsEnum.AVG_EXAM_SCORE);
+        students.stream().sorted(studentComparator).forEach(System.out::println);
     }
+
 }

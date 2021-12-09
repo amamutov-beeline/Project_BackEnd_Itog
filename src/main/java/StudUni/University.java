@@ -49,12 +49,10 @@ public class University {
 
     @Override
     public String toString() {
-        return "StudUni.University{" +
-                "id='" + id + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", shortName='" + shortName + '\'' +
-                ", yearOfFoundation=" + yearOfFoundation +
-                ", mainProfile=" + mainProfile +
-                '}';
+        return  "id = '" + id + '\'' +
+                ", fullName = '" + fullName + '\'' +
+                ", shortName = '" + shortName + '\'' +
+                ", yearOfFoundation = " + yearOfFoundation +
+                ", mainProfile = " + mainProfile;
     }
 }

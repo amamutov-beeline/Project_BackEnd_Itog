@@ -39,11 +39,9 @@ public class Student {
 
     @Override
     public String toString() {
-        return "StudUni.Student{" +
-                "fullName='" + fullName + '\'' +
-                ", universityId='" + universityId + '\'' +
-                ", currentCourseNumber=" + currentCourseNumber +
-                ", avgExamScore=" + avgExamScore +
-                '}';
+        return  "fullName = '" + fullName + '\'' +
+                ", universityId = '" + universityId + '\'' +
+                ", currentCourseNumber = " + currentCourseNumber +
+                ", avgExamScore = " + avgExamScore;
     }
 }
