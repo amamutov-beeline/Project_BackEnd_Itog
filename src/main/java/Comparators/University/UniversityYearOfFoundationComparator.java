@@ -1,6 +1,6 @@
 package Comparators.University;
 
-import StudUni.University;
+import studUni.University;
 
 public class UniversityYearOfFoundationComparator implements UniversityComparator{
     @Override

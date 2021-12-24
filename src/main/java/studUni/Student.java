@@ -1,9 +1,12 @@
-package StudUni;
+package studUni;
+
+import com.google.gson.annotations.SerializedName;
 
 public class Student {
-    private String fullName, universityId;
-    private int currentCourseNumber;
-    private float avgExamScore;
+    @SerializedName("studentName") private String fullName;
+    @SerializedName("universityId") private String universityId;
+    @SerializedName("course") private int currentCourseNumber;
+    @SerializedName("avgScore") private float avgExamScore;
 
     public String getFullName() {
         return fullName;
@@ -39,7 +42,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return  "fullName = '" + fullName + '\'' +
+        return "fullName = '" + fullName + '\'' +
                 ", universityId = '" + universityId + '\'' +
                 ", currentCourseNumber = " + currentCourseNumber +
                 ", avgExamScore = " + avgExamScore;

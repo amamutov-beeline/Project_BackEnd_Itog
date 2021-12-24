@@ -1,6 +1,6 @@
 package Comparators.University;
 
-import StudUni.University;
+import studUni.University;
 
 import java.util.Comparator;
 

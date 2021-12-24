@@ -1,6 +1,6 @@
 package Comparators.University;
 
-import StudUni.University;
+import studUni.University;
 import org.apache.commons.lang3.StringUtils;
 
 public class UniversityShortNameComparator implements UniversityComparator {

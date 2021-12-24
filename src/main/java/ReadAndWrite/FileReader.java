@@ -1,7 +1,7 @@
-package Reader;
+package ReadAndWrite;
 
-import StudUni.Student;
-import StudUni.University;
+import studUni.Student;
+import studUni.University;
 import enums.StudyProfile;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;

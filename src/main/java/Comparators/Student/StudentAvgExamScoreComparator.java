@@ -1,6 +1,6 @@
 package Comparators.Student;
 
-import StudUni.Student;
+import studUni.Student;
 
 public class StudentAvgExamScoreComparator implements StudentComparator{
     @Override

@@ -1,6 +1,6 @@
 package Comparators.Student;
 
-import StudUni.Student;
+import studUni.Student;
 import org.apache.commons.lang3.StringUtils;
 
 public class StudentFullNameComparator implements StudentComparator{

@@ -1,11 +1,15 @@
-package StudUni;
+package studUni;
 
+import com.google.gson.annotations.SerializedName;
 import enums.StudyProfile;
 
 public class University {
-    private String id, fullName, shortName;
-    private int yearOfFoundation;
-    private StudyProfile mainProfile;
+
+    @SerializedName("universityId") private String id;
+    @SerializedName("universityName") private String fullName;
+    @SerializedName("universityShortName") private String shortName;
+    @SerializedName("foundation") private int yearOfFoundation;
+    @SerializedName("profile") private StudyProfile mainProfile;
 
     public String getId() {
         return id;

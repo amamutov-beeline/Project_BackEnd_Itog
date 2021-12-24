@@ -1,4 +1,4 @@
-package Reader;
+package ReadAndWrite;
 
 import Comparators.Student.*;
 import Comparators.University.*;
