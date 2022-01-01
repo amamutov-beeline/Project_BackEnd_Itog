@@ -1,64 +1,60 @@
 import Comparators.Student.StudentComparator;
 import Comparators.University.UniversityComparator;
+import ReadAndWrite.JsonWriter;
+import ReadAndWrite.XmlWriter;
 import enums.StudComparatorsEnum;
 import enums.UnivComparatorsEnum;
 import ReadAndWrite.FileReader;
 import ReadAndWrite.XlsWriter;
+import studUni.FullInfo;
 import studUni.Statistics;
 import studUni.Student;
 import studUni.University;
-import ReadAndWrite.EnumReader;
+import Utils.EnumReader;
 import Utils.JsonUtil;
 import Utils.StatUtil;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class Main {
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws IOException {
+        try {
+            LogManager.getLogManager().readConfiguration(Main.class.getResourceAsStream("/logging.properties"));
+        } catch (IOException e) {
+            System.err.println("Could not setup logger configuration: " + e.toString());
+        }
 
+        logger.log(Level.INFO, "Application started, Logger configured");
         List<University> universities =
                 FileReader.UniversityInfo("src/main/resources/universityInfo.xlsx");
         UniversityComparator universityComparator =
                 EnumReader.getUniversityComparator(UnivComparatorsEnum.YEAR_OF_FOUNDATION);
         universities.sort(universityComparator);
-        String universitiesJson = JsonUtil.universityListToJson(universities);
-        // проверяем, что json создан успешно
-        System.out.println(universitiesJson);
-        List<University> universitiesFromJson = JsonUtil.jsonToUniversityList(universitiesJson);
-        // проверяем, что обратно коллекция воссоздаётся в таком же количестве элементов
-        System.out.println(universities.size() == universitiesFromJson.size());
-        universities.forEach(university -> {
-            String universityJson = JsonUtil.universityToJson(university);
-            // проверяем, что json из отдельного элемента создан успешно
-            System.out.println(universityJson);
-            University universityFromJson = JsonUtil.jsonToUniversity(universityJson);
-            // проверяем, что обратно элемент воссоздаётся
-            System.out.println(universityFromJson);
-        });
 
         List<Student> students =
                 FileReader.StudentInfo("src/main/resources/universityInfo.xlsx");
         StudentComparator studentComparator =
                 EnumReader.getStudentComparator(StudComparatorsEnum.AVG_EXAM_SCORE);
         students.sort(studentComparator);
-        String studentsJson = JsonUtil.studentListToJson(students);
-        // проверяем, что json создан успешно
-        System.out.println(studentsJson);
-        List<Student> studentsFromJson = JsonUtil.jsonToStudentList(studentsJson);
-        // проверяем, что обратно коллекция воссоздаётся в таком же количестве элементов
-        System.out.println(students.size() == studentsFromJson.size());
-        students.forEach(student -> {
-            String studentJson = JsonUtil.studentToJson(student);
-            // проверяем, что json из отдельного элемента создан успешно
-            System.out.println(studentJson);
-            Student studentFromJson = JsonUtil.jsonToStudent(studentJson);
-            // проверяем, что обратно элемент воссоздаётся
-            System.out.println(studentFromJson);
-        });
 
         List<Statistics> statisticsList = StatUtil.createStatistics(students, universities);
         XlsWriter.writeXlsStatistics(statisticsList, "statistics.xlsx");
+
+        FullInfo fullInfo = new FullInfo()
+                .setStudentList(students)
+                .setUniversityList(universities)
+                .setStatisticsList(statisticsList)
+                .setProcessDate(new Date());
+
+        XmlWriter.generateXmlReq(fullInfo);
+        JsonWriter.writeJsonReq(fullInfo);
+        logger.log(Level.INFO, "App finished");
     }
 }
