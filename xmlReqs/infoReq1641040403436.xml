@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    <studentsInfo>
+        <studentsEntry>
+            <avgExamScore>3.9</avgExamScore>
+            <currentCourseNumber>2</currentCourseNumber>
+            <fullName>Сидоров Е. Г.</fullName>
+            <universityId>0004-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.0</avgExamScore>
+            <currentCourseNumber>2</currentCourseNumber>
+            <fullName>Иванов И. А.</fullName>
+            <universityId>0002-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.0</avgExamScore>
+            <currentCourseNumber>2</currentCourseNumber>
+            <fullName>Витальев В. А.</fullName>
+            <universityId>0001-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.2</avgExamScore>
+            <currentCourseNumber>3</currentCourseNumber>
+            <fullName>Фёдоров А. И.</fullName>
+            <universityId>0002-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.3</avgExamScore>
+            <currentCourseNumber>4</currentCourseNumber>
+            <fullName>Игнатьев М. М.</fullName>
+            <universityId>0003-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.6</avgExamScore>
+            <currentCourseNumber>2</currentCourseNumber>
+            <fullName>Козлов М. В.</fullName>
+            <universityId>0002-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.7</avgExamScore>
+            <currentCourseNumber>4</currentCourseNumber>
+            <fullName>Васильев В. П.</fullName>
+            <universityId>0001-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.8</avgExamScore>
+            <currentCourseNumber>1</currentCourseNumber>
+            <fullName>Соколов В. В.</fullName>
+            <universityId>0004-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>4.8</avgExamScore>
+            <currentCourseNumber>3</currentCourseNumber>
+            <fullName>Иванов А. Г.</fullName>
+            <universityId>0001-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>5.0</avgExamScore>
+            <currentCourseNumber>1</currentCourseNumber>
+            <fullName>Петров П. А.</fullName>
+            <universityId>0001-high</universityId>
+        </studentsEntry>
+        <studentsEntry>
+            <avgExamScore>5.0</avgExamScore>
+            <currentCourseNumber>1</currentCourseNumber>
+            <fullName>Алексеев С. В.</fullName>
+            <universityId>0001-high</universityId>
+        </studentsEntry>
+    </studentsInfo>
+    <universityInfo>
+        <universityEntry>
+            <fullName>Самарский Медицинский Институт</fullName>
+            <id>0005-high</id>
+            <mainProfile>MEDICINE</mainProfile>
+            <shortName>СМИ</shortName>
+            <yearOfFoundation>1936</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Московский Государственный Медицинский Университет</fullName>
+            <id>0003-high</id>
+            <mainProfile>MEDICINE</mainProfile>
+            <shortName>МГМУ</shortName>
+            <yearOfFoundation>1960</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Московский Придуманный Институт</fullName>
+            <id>0002-high</id>
+            <mainProfile>PHYSICS</mainProfile>
+            <shortName>МПИ</shortName>
+            <yearOfFoundation>1987</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Казанский Университет Вычислений</fullName>
+            <id>0007-high</id>
+            <mainProfile>MATHEMATICS</mainProfile>
+            <shortName>КУВ</shortName>
+            <yearOfFoundation>1989</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Московский Выдуманный Университет</fullName>
+            <id>0001-high</id>
+            <mainProfile>PHYSICS</mainProfile>
+            <shortName>МВУ</shortName>
+            <yearOfFoundation>1990</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Тамбовский Университет Медицины</fullName>
+            <id>0004-high</id>
+            <mainProfile>MEDICINE</mainProfile>
+            <shortName>ТУМ</shortName>
+            <yearOfFoundation>1995</yearOfFoundation>
+        </universityEntry>
+        <universityEntry>
+            <fullName>Воронежский Литературно-Переводческий Университет</fullName>
+            <id>0006-high</id>
+            <mainProfile>LINGUISTICS</mainProfile>
+            <shortName>ВЛПУ</shortName>
+            <yearOfFoundation>2003</yearOfFoundation>
+        </universityEntry>
+    </universityInfo>
+    <statisticalInfo>
+        <statisticalEntry>
+            <examAvg>4.329999923706055</examAvg>
+            <profile>MEDICINE</profile>
+            <totalStudents>3</totalStudents>
+            <totalUniversities>3</totalUniversities>
+            <universityName>Самарский Медицинский Институт;Московский Государственный Медицинский Университет;Тамбовский Университет Медицины;</universityName>
+        </statisticalEntry>
+        <statisticalEntry>
+            <examAvg>0.0</examAvg>
+            <profile>LINGUISTICS</profile>
+            <totalStudents>0</totalStudents>
+            <totalUniversities>1</totalUniversities>
+            <universityName>Воронежский Литературно-Переводческий Университет;</universityName>
+        </statisticalEntry>
+        <statisticalEntry>
+            <examAvg>4.539999961853027</examAvg>
+            <profile>PHYSICS</profile>
+            <totalStudents>8</totalStudents>
+            <totalUniversities>2</totalUniversities>
+            <universityName>Московский Придуманный Институт;Московский Выдуманный Университет;</universityName>
+        </statisticalEntry>
+        <statisticalEntry>
+            <examAvg>0.0</examAvg>
+            <profile>MATHEMATICS</profile>
+            <totalStudents>0</totalStudents>
+            <totalUniversities>1</totalUniversities>
+            <universityName>Казанский Университет Вычислений;</universityName>
+        </statisticalEntry>
+    </statisticalInfo>
+    <processedAt>2022-01-01T18:33:22.967+06:00</processedAt>
+</root>

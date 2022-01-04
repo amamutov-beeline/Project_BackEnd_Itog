@@ -1,0 +1,30 @@
+[
+  {
+    "profile": "MATHEMATICS",
+    "examAvg": 0.0,
+    "totalStudents": 0,
+    "totalUniversities": 1,
+    "universityName": "Казанский Университет Вычислений;"
+  },
+  {
+    "profile": "MEDICINE",
+    "examAvg": 4.329999923706055,
+    "totalStudents": 3,
+    "totalUniversities": 3,
+    "universityName": "Самарский Медицинский Институт;Московский Государственный Медицинский Университет;Тамбовский Университет Медицины;"
+  },
+  {
+    "profile": "LINGUISTICS",
+    "examAvg": 0.0,
+    "totalStudents": 0,
+    "totalUniversities": 1,
+    "universityName": "Воронежский Литературно-Переводческий Университет;"
+  },
+  {
+    "profile": "PHYSICS",
+    "examAvg": 4.539999961853027,
+    "totalStudents": 8,
+    "totalUniversities": 2,
+    "universityName": "Московский Придуманный Институт;Московский Выдуманный Университет;"
+  }
+]
